@@ -55,19 +55,31 @@ st.markdown(
 @import url('https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css');
 
 /* === Pretendard 적용 (텍스트 요소만 명시) === */
-html, body, .stApp, .main, .block-container,
-p, div, span, h1, h2, h3, h4, h5, h6, li, label, a,
-button, input, textarea, select, td, th, caption {
-    font-family: "Pretendard Variable", "Pretendard", -apple-system, BlinkMacSystemFont, system-ui, sans-serif !important;
-    font-feature-settings: "kern" 1;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
+html, body, .stApp {
+    font-family: "Pretendard Variable", "Pretendard", -apple-system, BlinkMacSystemFont, system-ui, sans-serif;
+}
+
+/* 일반 텍스트 */
+p, h1, h2, h3, h4, h5, h6,
+li, label, td, th, caption {
+    font-family: inherit;
+}
+
+/* streamlit markdown text */
+[data-testid="stMarkdownContainer"] * {
+    font-family: inherit;
+}
+
+/* input text only */
+input, textarea, select {
+    font-family: inherit !important;
 }
 span[data-testid="stWidgetLabel"] p, 
 .stExpander summary p, 
 [data-testid="stHeader"] {
     font-family: "Pretendard Variable", "Pretendard", sans-serif !important;
 }
+
 
 /* === 아이콘 요소는 원본 폰트 유지 (Material Symbols / streamlit icons) === */
 svg, svg *, .material-icons, .material-icons-outlined,
