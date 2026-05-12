@@ -27,10 +27,11 @@ st.set_page_config(
 # 1. Pretendard 폰트 — 부모 문서 head에 강제 주입
 #    (streamlit sanitizer는 <link>를 제거하므로 JS로 우회)
 # ============================================================
+# 기존 components.html 부분을 아래와 같이 수정
 components.html(
     """
     <script>
-    (function() {
+    window.addEventListener('load', function() {
       var doc = window.parent.document;
       if (!doc.getElementById('pretendard-font-link')) {
         var link = doc.createElement('link');
@@ -39,7 +40,7 @@ components.html(
         link.href = 'https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css';
         doc.head.appendChild(link);
       }
-    })();
+    });
     </script>
     """,
     height=0,
