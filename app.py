@@ -446,7 +446,7 @@ st.markdown(
   <h1 class="display-xl">환율과<br/>입국 목적,<br/>그리고 관광수입.</h1>
   <p class="body-lg" style="max-width:680px;">
     2025년 4월부터 2026년 3월까지 12개월의 월별 데이터로 환율 민감도, 입국 목적 구성비,
-    1인당 관광수입의 관계를 다각도로 분석함. 모든 인사이트는 실제 데이터에 근거함.
+    1인당 관광수입의 관계를 다각도로 분석함. 모든 인사이트는 실제 데이터에 근거함. 가설-검증-인사이트 구조로 이루어짐.
   </p>
   <div style="margin-top:40px; display:flex; gap:8px;">
     <a class="pill-primary" href="#overview">분석 보기 ↓</a>
@@ -546,7 +546,7 @@ st.markdown(
 <div class="block block-lime">
   <div class="block-inner">
     <div class="eyebrow">02 / THEME 01</div>
-    <h2 class="display-lg">환율이 오르면<br/>누가 더 움직이나.</h2>
+    <h2 class="display-lg">환율 변화는<br/>어떤 관광객을 움직이는가.</h2>
     <p class="subhead" style="max-width:720px;">
       관광은 환율에 민감하고, 질병치료처럼 꼭 와야 하는 방문은 환율에 둔감할 것이라는 가설을 검증함.
     </p>
@@ -818,7 +818,7 @@ st.markdown(
     <h2 class="display-lg">가설은<br/>데이터와 반대였음.</h2>
     <p class="body-lg" style="margin-top:24px; max-width:760px;">
       놀랍게도 사업·질병·회의 비율이 높은 달에 1인당 관광수입은 오히려 낮음.
-      이유를 풀어보면: 관광이 폭증하는 성수기에는 외래관광객 자체가 많고, 쇼핑·면세점 매출도 함께 증가하면서 평균 지출이 올라감.
+      이유를 예상해보자면, 관광이 폭증하는 성수기에는 외래관광객 자체가 많고, 쇼핑·면세점 매출도 함께 증가하면서 평균 지출이 올라감.
       반대로 비수기에는 사업·회의 같은 단기 출장자 비중이 상대적으로 커지지만, 이들의 평균 체류·지출은 일반 관광객의 성수기 지출보다 작음.
     </p>
     <ul style="margin-top:32px; padding-left:20px; font-size:17px; font-weight:330; line-height:1.8;">
