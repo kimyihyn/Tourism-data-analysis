@@ -703,6 +703,7 @@ with c2:
                          labels={"고단가추정비율": "고단가 추정 비율(%)",
                                  "1인당관광수입": "1인당 관광수입($)"})
     fig_hd.update_traces(textposition="top center", marker=dict(size=14, color="#000"))
+    if len(fig_hd.data) > 1:
     fig_hd.data[1].line.color = "#FF6B4A"
     fig_hd.data[1].line.dash = "dash"
     fig_hd.update_layout(height=440)
@@ -840,6 +841,7 @@ with c1:
                           trendline="ols",
                           labels={"환율": "환율(원/달러)", "1인당관광수입": "1인당 관광수입($)"})
     fig_sc3.update_traces(textposition="top center", marker=dict(size=14, color="#000"))
+    if len(fig_sc3.data) > 1:
     fig_sc3.data[1].line.color = "#FF6B4A"
     fig_sc3.data[1].line.dash = "dash"
     fig_sc3.update_layout(height=460)
