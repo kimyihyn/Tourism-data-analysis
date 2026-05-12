@@ -280,6 +280,11 @@ hr { border-color: #EFEFEF; margin: 96px 0 48px !important; }
 .js-plotly-plot .modebar-btn {
     font-family: sans-serif !important;
 }
+.plotly-notifier::after {
+    content: "Tourism Dashboard" !important;
+    color: #000 !important;
+    font-size: 12px !important;
+}
 </style>
 """,
     unsafe_allow_html=True,
