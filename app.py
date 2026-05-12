@@ -247,6 +247,23 @@ hr { border-color: #EFEFEF; margin: 96px 0 48px !important; }
 .js-plotly-plot .plotly svg text {
     font-family: "Pretendard Variable", sans-serif !important;
 }
+/* Plotly modebar tooltip 제거 */
+.modebar-btn::after,
+.modebar-btn:after,
+.modebar-btn--logo::after {
+    display: none !important;
+    content: "" !important;
+}
+
+/* Plotly hover label 깨짐 방지 */
+.plotly-notifier {
+    display: none !important;
+}
+
+/* Plotly 내부 버튼 폰트 초기화 */
+.js-plotly-plot .modebar-btn {
+    font-family: sans-serif !important;
+}
 </style>
 """,
     unsafe_allow_html=True,
