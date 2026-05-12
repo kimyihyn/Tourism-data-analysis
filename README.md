@@ -199,7 +199,7 @@ https://gemini.google.com/gem/1tOyjBxBdM_6TdblFQjbujMuJw5Pa7pvA?usp=sharing
 
 ---
 
-# 수정 내용
+# 프롬포트 수정 내용
 
 - 예상 추가
 - csv 파일에 대한 설명 추가
@@ -212,13 +212,13 @@ https://gemini.google.com/gem/1tOyjBxBdM_6TdblFQjbujMuJw5Pa7pvA?usp=sharing
 
 ## 사용 모델
 - Claude Opus 4.7 모델 사용
-- 클로드 프로 모델 사용 중
 - cowork(AI 에이전트) 이용
-
+클로드 프로 모델 사용 중으로 평소 cowork(AI 에이전트) 이용하여 작업 중입니다. 알고 보니 클로드 cowork는 채팅 공유 기능 없이 컴퓨터에만 저장되어 데이터 내보내기도 되지 않습니다. 이에 아래 구글 드라이브에 프롬포트와 답변 전문 + 인증 동영상을 첨부하였습니다. 앞으로 주의하겠습니다. 죄송합니다.
+링크: https://drive.google.com/drive/folders/1QtI3jHUiHjRF0pJA1vfmurxrKRW7Ai9R?usp=share_link
+아래는 클로드 Opus 4.7 사용 요약입니다.
 ---
 
-## 작업 과정
-
+## 요약
 ### 1차
 
 #### 프롬포트
