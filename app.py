@@ -240,6 +240,13 @@ hr { border-color: #EFEFEF; margin: 96px 0 48px !important; }
     .block { padding: 32px 24px; border-radius: 0; margin-left: -1rem; margin-right: -1rem; }
     .top-nav .nav-links { display: none; }
 }
+.js-plotly-plot .plotly .modebar {
+    font-family: sans-serif !important;
+}
+
+.js-plotly-plot .plotly svg text {
+    font-family: "Pretendard Variable", sans-serif !important;
+}
 </style>
 """,
     unsafe_allow_html=True,
