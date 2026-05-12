@@ -62,6 +62,11 @@ button, input, textarea, select, td, th, caption {
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
 }
+span[data-testid="stWidgetLabel"] p, 
+.stExpander summary p, 
+[data-testid="stHeader"] {
+    font-family: "Pretendard Variable", "Pretendard", sans-serif !important;
+}
 
 /* === 아이콘 요소는 원본 폰트 유지 (Material Symbols / streamlit icons) === */
 svg, svg *, .material-icons, .material-icons-outlined,
@@ -244,6 +249,9 @@ try:
 except FileNotFoundError as e:
     st.error(f"CSV 파일을 찾을 수 없음: {e}")
     st.stop()
+r_tour, r_sick, b_tour, b_sick = 0, 0, 0, 0
+r_hd, p_hd, slope_hd = 0, 0, 0
+r_er, p_er, slope_er = 0, 0, 0
 
 PURPOSE_KO = {
     "관광": "관광", "방문": "방문", "사업": "사업", "질병": "질병치료",
