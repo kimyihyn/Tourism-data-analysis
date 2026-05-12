@@ -349,29 +349,55 @@ PRETENDARD = "Pretendard Variable, Pretendard, sans-serif"
 PASTEL_SEQ = ["#1E1B4B", "#FF6B4A", "#5C8AE6", "#D4A574", "#7BB785", "#C97AB5", "#8A8A8A", "#404040"]
 
 
+```python
 def style_fig(fig, dark=False):
     fg = "#FFFFFF" if dark else "#000000"
+
     fig.update_layout(
-        font=dict(family=PRETENDARD, color=fg, size=14),
-        paper_bgcolor="rgba(0,0,0,0)", plot_bgcolor="rgba(0,0,0,0)",
-        xaxis=dict(gridcolor="rgba(0,0,0,0.06)" if not dark else "rgba(255,255,255,0.12)",
-                   linecolor=fg, tickcolor=fg, title_font=dict(size=13, color=fg)),
-        yaxis=dict(gridcolor="rgba(0,0,0,0.06)" if not dark else "rgba(255,255,255,0.12)",
-                   linecolor=fg, tickcolor=fg, title_font=dict(size=13, color=fg)),
+        title=dict(text=""),
+
+        font=dict(
+            family=PRETENDARD,
+            color=fg,
+            size=14
+        ),
+
+        paper_bgcolor="rgba(0,0,0,0)",
+        plot_bgcolor="rgba(0,0,0,0)",
+
+        xaxis=dict(
+            gridcolor="rgba(0,0,0,0.06)" if not dark else "rgba(255,255,255,0.12)",
+            linecolor=fg,
+            tickcolor=fg,
+            title_font=dict(size=13, color=fg)
+        ),
+
+        yaxis=dict(
+            gridcolor="rgba(0,0,0,0.06)" if not dark else "rgba(255,255,255,0.12)",
+            linecolor=fg,
+            tickcolor=fg,
+            title_font=dict(size=13, color=fg)
+        ),
+
         margin=dict(l=20, r=20, t=40, b=40),
-       legend=dict(
-          font=dict(
-              family="Pretendard Variable, sans-serif",
-              color=fg,
-              size=13
+
+        legend=dict(
+            font=dict(
+                family="Pretendard Variable, sans-serif",
+                color=fg,
+                size=13
+            )
+        ),
+
+        title_font=dict(
+            color=fg,
+            size=18,
+            family=PRETENDARD
+        ),
     )
-),
-        modebar=dict(
-            orientation="v"
-),
-        title_font=dict(color=fg, size=18, family=PRETENDARD),
-    )
+
     return fig
+```
 
 
 def explainer(label, text):
