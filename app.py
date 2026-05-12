@@ -395,7 +395,6 @@ def style_fig(fig, dark=False):
     )
 
     return fig
-```
 
 
 def explainer(label, text):
