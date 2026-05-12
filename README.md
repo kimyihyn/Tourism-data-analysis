@@ -287,12 +287,3 @@ https://gemini.google.com/gem/1tOyjBxBdM_6TdblFQjbujMuJw5Pa7pvA?usp=sharing
 채팅 열람 링크가 없어서 물어봤는데 cowork는 공유 불가였습니다.
 
 ---
-
-# 첨부 자료
-
-알고 보니 클로드 cowork는 채팅 공유 기능 없이 컴퓨터에만 저장되어 데이터 내보내기도 되지 않습니다.  
-이에 아래 구글 드라이브에 프롬포트와 답변 전문 + 인증 동영상을 첨부하였습니다.  
-앞으로 주의하겠습니다. 죄송합니다.
-
-## 링크
-https://drive.google.com/drive/folders/1QtI3jHUiHjRF0pJA1vfmurxrKRW7Ai9R?usp=share_link
