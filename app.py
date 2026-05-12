@@ -244,7 +244,13 @@ hr { border-color: #EFEFEF; margin: 96px 0 48px !important; }
     font-family: sans-serif !important;
 }
 
-.js-plotly-plot .plotly svg text {
+/* Plotly 차트 텍스트만 Pretendard 적용 */
+.js-plotly-plot .xtick text,
+.js-plotly-plot .ytick text,
+.js-plotly-plot .gtitle text,
+.js-plotly-plot .legend text,
+.js-plotly-plot .annotation-text,
+.js-plotly-plot .hovertext text {
     font-family: "Pretendard Variable", sans-serif !important;
 }
 /* Plotly modebar tooltip 제거 */
@@ -254,10 +260,20 @@ hr { border-color: #EFEFEF; margin: 96px 0 48px !important; }
     display: none !important;
     content: "" !important;
 }
-
-/* Plotly hover label 깨짐 방지 */
-.plotly-notifier {
+/* Plotly modebar tooltip 완전 제거 */
+.js-plotly-plot .modebar-btn[data-title]:hover::before,
+.js-plotly-plot .modebar-btn[data-title]:hover::after {
     display: none !important;
+    opacity: 0 !important;
+    visibility: hidden !important;
+}
+
+.js-plotly-plot .modebar-btn {
+    pointer-events: auto;
+}
+
+.js-plotly-plot .modebar-btn svg {
+    font-family: revert !important;
 }
 
 /* Plotly 내부 버튼 폰트 초기화 */
@@ -334,7 +350,16 @@ def style_fig(fig, dark=False):
         yaxis=dict(gridcolor="rgba(0,0,0,0.06)" if not dark else "rgba(255,255,255,0.12)",
                    linecolor=fg, tickcolor=fg, title_font=dict(size=13, color=fg)),
         margin=dict(l=20, r=20, t=40, b=40),
-        legend=dict(font=dict(color=fg, size=13)),
+       legend=dict(
+          font=dict(
+              family="Pretendard Variable, sans-serif",
+              color=fg,
+              size=13
+    )
+),
+        modebar=dict(
+            orientation="v"
+),
         title_font=dict(color=fg, size=18, family=PRETENDARD),
     )
     return fig
