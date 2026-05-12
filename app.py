@@ -367,8 +367,7 @@ st.markdown(
     <div class="eyebrow">01 / OVERVIEW</div>
     <h2 class="display-lg">한눈에 보는<br/>12개월의 흐름.</h2>
     <p class="body" style="max-width:600px; margin-top:16px;">
-      외래관광객 수, 환율, 1인당 관광수입의 평균값임. 단일 수치이지만 이 셋의
-      관계가 본 분석의 출발점임.
+      외래관광객 수, 환율, 1인당 관광수입의 평균값.
     </p>
     <div class="metric-row">
       <div class="metric-card">
