@@ -276,14 +276,18 @@ hr { border-color: #EFEFEF; margin: 96px 0 48px !important; }
     font-family: revert !important;
 }
 
-/* Plotly 내부 버튼 폰트 초기화 */
 .js-plotly-plot .modebar-btn {
     font-family: sans-serif !important;
 }
-.plotly-notifier::after {
-    content: "Tourism Dashboard" !important;
-    color: #000 !important;
-    font-size: 12px !important;
+
+/* 왼쪽 위 undefined 제거 */
+.plotly-notifier::before {
+    content: "" !important;
+}
+
+.plotly-notifier {
+    font-size: 0 !important;
+    color: transparent !important;
 }
 </style>
 """,
